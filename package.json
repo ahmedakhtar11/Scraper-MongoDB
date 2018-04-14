@@ -7,15 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ptpeck357/MongoDB-Scraper.git"
+    "type": "git"
   },
-  "author": "Peter",
+  "author": "Ahmed Akhtar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ptpeck357/MongoDB-Scraper/issues"
+    "url": "https://github.com/ahmedakhtar11/Scraper-MongoDB"
   },
-  "homepage": "https://github.com/ptpeck357/MongoDB-Scraper#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
