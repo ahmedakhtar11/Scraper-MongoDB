@@ -1,0 +1,136 @@
+html, body {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+} 
+
+.navbar {
+	background-color: darkslategray;
+	border-radius: 9px;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+}
+
+.jumbotron h1 {
+	text-align: center;
+	color: steelblue;
+	font-family: 'Impact', Helvetica;
+	font-style: italic;
+	font-size: 80px;
+}	
+
+#scrape {
+	margin-right: .5rem;
+}
+
+.jumbotron {
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-image: url(../images/download.jpg);
+    margin-top: 70px;
+}
+
+.bodyheading {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Lobster', cursive;
+	font-style: italic;
+	padding: 5px;
+}
+
+.card-header {
+    background-color: mediumpurple;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.card-block {
+    border: 1px solid black;
+}
+
+.panel-default > .panel-heading-custom {
+    background: darkslateblue;
+    color: white;
+}
+
+#panelbody{
+	background-image: url(../images/download.jpg);
+	height: 100%;
+}
+
+#cardbody {
+	margin: 20px 0px;
+}
+
+.card-block {
+	background-color: lightgray;
+	border-radius: 9px;
+}
+
+#URL {
+	color: white;
+	font-size: 20px;
+}
+
+#summary {
+	font-family: 'Lora', serif;
+	margin: 0px 15px 0px;
+	padding-bottom: 20px;
+}
+
+.noarticles{
+	text-align: center;
+	font-size: 25px;
+	padding: 20px;
+}
+
+.saveBtn {
+	color: white;
+	display: inline-block;
+}
+
+.footer {
+    background-color: darkslategray;
+    color: #FFF;
+    padding: 20px 0;
+    margin-top: 5px;
+}
+
+#notetitle {
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#modalnote {
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: lightgray;
+	border-radius: 9px;
+	display: inline-block;
+}
+
+#deletenote {
+	float: right;
+	display: inline-block;
+}
+
+.modaltext{
+	font-family: 'Lora', serif;
+	text-align: center;
+	font-size: 20px;
+}
+
+.modalnote {
+	font-family: 'Lora', serif;
+	font-size: 15px;
+}
+
+#article-note-modal{
+	height: 100%;
+}
+

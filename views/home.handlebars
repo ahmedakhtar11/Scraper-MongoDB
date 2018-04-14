@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1>The New York Times Scraper</h1>
+    </div>
+    <br>
+
+    {{#unless articles}}
+    <div class="panel panel-default">
+        <div class="panel-heading panel-heading-custom bodyheading">Top Articles</div>
+        <div class="panel-body" id="panelbody">
+            <br>
+            <div class="col-md-12">
+                <div class="card-block">
+                    <p class="card-text noarticles">Oh no! There appears to be no articles!</p>
+                </div>
+                <br><br>
+                <br><br>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    {{/unless}}
+
+    <div class="panel-body panel-default" id="panelbody">
+
+        {{#if articles}}
+        <div class="panel-heading panel-heading-custom bodyheading">Latest Articles</div>
+        {{#each articles}}
+        <div class="col-md-12" id="cardbody">
+            <div class="card-block">
+                <a href="{{url}}" id="URL"><h3 class="card-header d-flex justify-content-start align-items-center">{{title}}</a><button class="btn btn-success ml-auto p-2 saveBtn" data-id={{_id}} type="button">Save Article</button></h3>
+                <br>
+                <p class="card-text" id="summary">{{summary}}</p>
+            </div>
+        </div>
+        {{/each}}
+        {{/if}}
+    </div>
+</div>
+
+<!--Modal- Save Button Alert: "Article was Saved"-->
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="modaltext">Your article was successfully saved!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Dismiss</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Modal- Deletion Button Alert: "Articles and Notes will be Deleted"-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel-warning">
+            <div class="modal-header panel-heading">
+                <h4 class="modal-title">Warning!</h4>
+            </div>
+            <div class="modal-body">
+                {{#if articles}}
+                <p class="modaltext">Deleting all the articles will also delete all your notes. Are you sure?</p>
+
+                {{else}}
+                <p class="modaltext">There are no articles to delete</p>
+                {{/if}}
+            </div>
+            {{#if articles}}
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <span>
+                    <form action="/delete" method="GET">
+                        <button type="submit" class="btn btn-danger">Yes</button>
+                    </form>
+                </span>
+            </div>
+            {{else}}
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
+
+<!--Modal- Deletion Button Alert: "Articles and Notes will be Deleted"-->
+<div class="modal fade" id="returnamount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="modaltext"></p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Dismiss</button>
+            </div>
+        </div>
+    </div>
+</div>
