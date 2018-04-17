@@ -4,7 +4,26 @@ html, body {
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-} 
+}
+
+a {
+    color: ghostwhite;
+}
+
+a:hover {
+    color: ghostwhite;
+   font-weight: bold;
+}
+
+button:hover {
+    color: ghostwhite;
+    font-weight: bold;
+}
+
+button {
+    margin: 2px;
+}
+
 
 .navbar {
 	background-color: darkslategray;
@@ -22,10 +41,6 @@ html, body {
 	font-size: 80px;
 }	
 
-#scrape {
-	margin-right: .5rem;
-}
-
 .jumbotron {
     border: 2px solid black;
     background-repeat: no-repeat;
@@ -36,7 +51,7 @@ html, body {
 .bodyheading {
 	text-align: center;
 	font-size: 30px;
-	font-family: 'Lobster', cursive;
+	font-family: 'Helvetica';
 	font-style: italic;
 	padding: 5px;
 }
@@ -94,9 +109,10 @@ html, body {
 
 .footer {
     background-color: darkslategray;
-    color: #FFF;
-    padding: 20px 0;
+    color: ghostwhite;
+    padding: 15px;
     margin-top: 5px;
+    bottom: 0;
 }
 
 #notetitle {
