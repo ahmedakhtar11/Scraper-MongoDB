@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\models",
+    "\\public",
+    "\\public\\assets",
+    "\\public\\assets\\css",
+    "\\public\\assets\\images",
     "\\routes",
     "\\views",
     "\\views\\layouts",
     "\\views\\partials"
   ],
-  "SelectedNode": "\\routes\\delete.js",
+  "SelectedNode": "\\views\\partials\\header.handlebars",
   "PreviewInSolutionExplorer": false
 }
