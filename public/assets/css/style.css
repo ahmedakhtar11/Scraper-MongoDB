@@ -76,9 +76,9 @@ html, body {
 }
 
 #summary {
-	font-family: 'Lora', serif;
-	margin: 0px 15px 0px;
-	padding-bottom: 20px;
+    font-family: 'Helvetica', serif;
+    margin: 0px 15px 0px;
+    padding-bottom: 20px;
 }
 
 .noarticles{
@@ -120,14 +120,14 @@ html, body {
 }
 
 .modaltext{
-	font-family: 'Lora', serif;
+	font-family: 'Helvetica', serif;
 	text-align: center;
 	font-size: 20px;
 }
 
 .modalnote {
-	font-family: 'Lora', serif;
-	font-size: 15px;
+    font-family: 'Helvetica', serif;
+    font-size: 15px;
 }
 
 #article-note-modal{

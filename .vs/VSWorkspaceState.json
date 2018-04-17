@@ -11,6 +11,6 @@
     "\\views\\layouts",
     "\\views\\partials"
   ],
-  "SelectedNode": "\\views\\partials\\header.handlebars",
+  "SelectedNode": "\\models\\Article.js",
   "PreviewInSolutionExplorer": false
 }

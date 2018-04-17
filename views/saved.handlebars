@@ -27,7 +27,7 @@
                 <a href="{{url}}" id="URL">
                     <h3 class="card-header d-flex justify-content-start align-items-center">{{title}}
                 </a>
-                <button type="submit" class="btn btn-success ml-auto p-2 viewnote" data-id={{_id}}>View Article's Note</button>
+                <button type="submit" class="btn btn-success ml-auto p-2 viewnote" data-id={{_id}}>View Article Notes</button>
                 <button class="btn btn-danger ml-2 p-2 deletesingle" type="button">Delete from Saved</button>
                 </h3>
                 <br>
@@ -95,9 +95,9 @@
             </div>
             <div class="modal-body">
                 {{#if articles}}
-                <p class="modaltext">Deleting all the articles will also delete all your notes. Are you sure?</p>
+                <p class="modaltext">Are you sure you want to delete all of your saved Articles?</p>
                 {{else}}
-                <p class="modaltext">There are no articles to delete</p>
+                <p class="modaltext">There are no articles to delete!</p>
                 {{/if}}
             </div>
             {{#if articles}}
