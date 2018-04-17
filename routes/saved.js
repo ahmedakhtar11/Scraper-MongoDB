@@ -43,7 +43,7 @@ router.get('/saved/:id', function(req, res) {
             if (error) {
                 console.log(error);
             } else {
-                res.json("Saved success!")
+                res.json("Article Saved!")
             }
         }
     );
