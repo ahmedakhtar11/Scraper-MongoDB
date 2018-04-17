@@ -1,10 +1,9 @@
 //Dependencies
 var path = require("path");
 var express = require("express");
-var router = express.Router();
-
-var Note = require("../models/Note.js");
 var Article = require("../models/Article.js");
+var router = express.Router();
+var Note = require("../models/Note.js");
 
 router.get('/saved', function(req, res) {
 
@@ -26,9 +25,7 @@ router.get('/saved', function(req, res) {
 
 // Updating Article as Saved
 router.get('/saved/:id', function(req, res) {
-
     var id = req.params.id;
-
     Article.update(
         {
           _id: id
@@ -38,7 +35,6 @@ router.get('/saved/:id', function(req, res) {
                 saved: true
             }
         },
-
         function(error, edited) {
             if (error) {
                 console.log(error);
@@ -47,14 +43,12 @@ router.get('/saved/:id', function(req, res) {
             }
         }
     );
-
 });
 
 // Updating Articles as Unsaved
 router.get("/unsave/:id", function(req, res){
 
     var id = req.params.id;
-    
     Article.update(
         {
           _id: id
