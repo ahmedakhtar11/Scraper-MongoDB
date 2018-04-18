@@ -16,7 +16,7 @@ var deleteArticles = require('./routes/delete.js');
 var note = require('./routes/note.js');
 var home = require('./routes/home.js');
 var saved = require('./routes/saved.js');
-var scraped = require('./routes/scraped.js');
+var scrapingAPI = require('./routes/scrapingAPI.js');
 
 // Initializing Express
 var app = express();
@@ -55,11 +55,11 @@ db.once("open", function() {
  	console.log("Mongoose Connection Successful!");
 });
 
+app.use('/', scrapingAPI);
 app.use('/', home);
-app.use('/', saved);
-app.use('/', scraped);
-app.use('/', deleteArticles);
 app.use('/', note);
+app.use('/', saved);
+app.use('/', deleteArticles);
 
 var PORT = process.env.PORT || 3000;
 
