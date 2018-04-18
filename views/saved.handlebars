@@ -30,7 +30,7 @@
                     <h3 class="card-header d-flex justify-content-start align-items-center">{{title}}
                 </a>
                 <button type="submit" class="btn btn-success ml-auto p-2 viewnote" data-id={{_id}}>View Article Notes</button>
-                <button class="btn btn-danger ml-2 p-2 deletesingle" type="button">Delete from Saved</button>
+                <button class="btn btn-danger ml-2 p-2 deletesingle" type="button">Delete Article</button>
                 </h3>
                 <br>
                 <p class="card-text" id="summary">{{summary}}</p>
@@ -71,7 +71,7 @@
                 <h4 class="modal-title">Warning!</h4>
             </div>
             <div class="modal-body">
-                <p id="modaltext">The Article Has been Unsaved.</p>
+                <p id="modaltext">The Article Has Been Unsaved.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -79,7 +79,7 @@
                     {{#each articles}}
                     <form action="/unsave/{{_id}}" method="GET">
                         {{/each}}
-                        <button type="submit" class="btn btn-danger">Ok</button>
+                        <button type="submit" class="btn btn-success">Ok</button>
                     </form>
                 </span>
 
