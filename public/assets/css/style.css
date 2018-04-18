@@ -22,8 +22,8 @@ button:hover {
 
 button {
     margin: 2px;
+    border: 1px solid black;
 }
-
 
 .navbar {
 	background-color: darkslategray;

@@ -13,9 +13,8 @@ router.get("/scrape", function(req, res){
 
 	    var $ = cheerio.load(html);
 	    
-	    $("#latest-panel article.story.theme-summary").each(function(i, element) {
+        $(".story.theme-summary").each(function(i, element) {
 
-	      	// Push the Href and Text of each Article link to the resulting object
 	      	var newArticle = new Article({
 	      		url: $(element).find('.story-body>.story-link').attr('href'),
            		title: $(element).find('h2.headline').text().trim(),

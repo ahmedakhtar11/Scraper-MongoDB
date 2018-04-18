@@ -37,7 +37,7 @@ mongoose.Promise = Promise;
 
 mongoose.connect(MONGODB_URI, function (err, db) {
   	if (err) {
-    	console.log('Unable to connect to the mongoDB server. Error:', err);
+    	console.log('Unable to connect to the MongoDB server. Error:', err);
   	} else {
     	console.log('Connection established to', MONGODB_URI);
 	}
@@ -52,7 +52,7 @@ db.on("error", function(error) {
 
 // Return Success Message after Successful connection.
 db.once("open", function() {
- 	console.log("Mongoose connection successful.");
+ 	console.log("Mongoose Connection Successful!");
 });
 
 app.use('/', home);
