@@ -9,7 +9,7 @@
     "\\public\\assets\\javascript",
     "\\routes",
     "\\views",
-    "\\views\\layouts"
+    "\\views\\partials"
   ],
   "SelectedNode": "\\server.js",
   "PreviewInSolutionExplorer": false

@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// 'Confirm Delete' Modal, after Clicking "Delete Articles"
     $("#delete").click(function(){
 
-    	$("#myModal").modal('show');
+    	$("#alertModal").modal('show');
     	
     });
 

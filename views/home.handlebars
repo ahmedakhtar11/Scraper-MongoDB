@@ -24,7 +24,7 @@
     <div class="panel-body panel-default" id="panelbody">
 
         {{#if articles}}
-        <div class="panel-heading panel-heading-custom bodyheading">Scraped Articles:</div>
+        <div class="panel-heading panel-heading-custom bodyheading">Scraped NYT Technology Articles:</div>
         {{#each articles}}
         <div class="col-md-12" id="cardbody">
             <div class="card-block">
@@ -39,7 +39,7 @@
 </div>
 
 <!--Modal- Save Button Alert: "Article was Saved"-->
-<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
@@ -54,7 +54,7 @@
 
 
 <!--Modal- Deletion Button Alert: "Articles and Notes will be Deleted"-->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content panel-warning">
             <div class="modal-header panel-heading">
@@ -73,7 +73,7 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
                 <span>
                     <form action="/delete" method="GET">
-                        <button type="submit" class="btn btn-danger">Yes</button>
+                        <button type="submit" class="btn btn-success">Yes</button>
                     </form>
                 </span>
             </div>
@@ -88,7 +88,7 @@
 </div>
 
 <!--Modal- Deletion Button Alert: "Articles and Notes will be Deleted"-->
-<div class="modal fade" id="returnamount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="returnamount" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
