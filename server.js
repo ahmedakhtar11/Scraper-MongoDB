@@ -8,17 +8,17 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 
 // Models
-var Note = require("./models/Note.js");
 var Article = require("./models/Article.js");
+var Note = require("./models/Note.js");
 
 // Routes
+var deleteArticles = require('./routes/delete.js');
+var note = require('./routes/note.js');
 var home = require('./routes/home.js');
 var saved = require('./routes/saved.js');
 var scraped = require('./routes/scraped.js');
-var deleteArticles = require('./routes/delete.js');
-var note = require('./routes/note.js');
 
-// Initialize Express
+// Initializing Express
 var app = express();
 
 // Setting up Handlebars
