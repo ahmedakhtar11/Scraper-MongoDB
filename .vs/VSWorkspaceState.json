@@ -6,11 +6,11 @@
     "\\public\\assets",
     "\\public\\assets\\css",
     "\\public\\assets\\images",
+    "\\public\\assets\\javascript",
     "\\routes",
     "\\views",
-    "\\views\\layouts",
-    "\\views\\partials"
+    "\\views\\layouts"
   ],
-  "SelectedNode": "\\models\\Article.js",
+  "SelectedNode": "\\server.js",
   "PreviewInSolutionExplorer": false
 }
